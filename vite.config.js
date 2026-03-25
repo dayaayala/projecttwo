@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/projecttwo/',
+  server: {
+    // With a non-root base, open the app URL so the favicon + assets resolve.
+    open: '/projecttwo/',
+  },
 })
